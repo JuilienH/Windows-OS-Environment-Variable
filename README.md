@@ -7,3 +7,28 @@ In a python program, we usually will have a database connector where you input a
 For example, I created the alias for connecting to Snowflake database, I made the name as snow_password, which is used in my python program.
 
 ![Capture](https://user-images.githubusercontent.com/22305109/234949789-7c857d4f-29c8-40ba-83ef-11cea2fdcf7e.PNG)
+
+##python connector to Snowflake 
+```
+import os
+import snowflake.connector
+import pandas as pd
+
+from pickle import TRUE
+from sqlite3 import Cursor
+
+from datetime import datetime as dt
+import numpy as np
+
+#query1-snowflake
+ctx = snowflake.connector.connect(
+    role='myrolename',
+    user='myusername',
+    password=os.environ.get('SNOW_PASSWORD'),
+    account='the url to snowflake',
+    warehouse='warehousename',
+    database='databasename',
+    schema='schemaname'
+    )
+
+```
