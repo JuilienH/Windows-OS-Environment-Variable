@@ -9,6 +9,7 @@ For example, I created the alias for connecting to Snowflake database, I made th
 ![Capture](https://user-images.githubusercontent.com/22305109/234949789-7c857d4f-29c8-40ba-83ef-11cea2fdcf7e.PNG)
 
 ## python connector to Snowflake 
+python statement used: os.envrion.get
 ```
 import os
 import snowflake.connector
