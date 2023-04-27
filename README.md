@@ -1,1 +1,2 @@
 # Windows-OS-Environment-Variable
+In a python program, we usually will have a database connector where you input all needed paramaters for constructing a connection string. Some are sensitive information or something you don't share, like the password. You can instead put an environment variable with an alias, which is linked to the password hidden in the background. Depending on the operating system you execute your program, this repository shows how you can collaborate scripting with your team members without sharing your personal credential.
